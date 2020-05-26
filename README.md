@@ -54,3 +54,9 @@ I want to see an option to delete the listing
 
 
 ```
+
+### Plan
+
+**Frontend**
+
+[!output](frontend_plan.jpg)
