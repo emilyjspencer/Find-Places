@@ -1,0 +1,22 @@
+{
+  "name": "listplaces",
+  "version": "1.0.0",
+  "description": "```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilyjspencer/Find-Places.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilyjspencer/Find-Places/issues"
+  },
+  "homepage": "https://github.com/emilyjspencer/Find-Places#readme",
+  "dependencies": {
+    "react-router-dom": "5.2.0"
+  }
+}
