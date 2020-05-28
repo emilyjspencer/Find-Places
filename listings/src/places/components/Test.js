@@ -3,9 +3,8 @@ import React from 'react';
 const Test = () => {
   return (
       <div>
-        <h1>I am</h1>
-        <h2>a</h2>
-        <h3>test</h3>
+        <h1>I am a place</h1>
+        
       </div>
   )
 }
