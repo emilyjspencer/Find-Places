@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-do
 import './App.css';
 
 import Users from './users/pages/Users';
-import Test from './places/components/Test';
+import Test from './listings/components/Test';
 import Test2 from './shared/components/Test2';
-import NewPlace from './places/pages/NewPlace';
+import NewListing from './listings/pages/NewListing';
 
 const App = () => {
   return (
@@ -15,8 +15,8 @@ const App = () => {
         <Route path="/" exact>
           <Users />
         </Route>
-        <Route path="/places/new" exact>
-          <NewPlace />
+        <Route path="/listings/new" exact>
+          <NewListing />
         </Route>
         <Route path="/shared">
             <Test2 />
