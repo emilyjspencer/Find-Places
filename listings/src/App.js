@@ -13,7 +13,8 @@ const App = () => {
       <Router>
         <Switch>
         <Route path="/" exact>
-          <Users />
+          <Users 
+          />
         </Route>
         <Route path="/listings/new" exact>
           <NewListing />
