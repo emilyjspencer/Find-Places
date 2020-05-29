@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import MainHeader from './MainHeader';
 import SideDrawer from './SideDrawer';
 import NavigationLinks from './NavigationLinks';
+import Backdrop from '../UIElements/Backdrop';
 
 import './MainNavigation.css';
 
@@ -15,8 +16,13 @@ const MainNavigation = props => {
     setDrawerIsOpen(true);
   };
 
+  const closeSideDrawerHandler = () => {
+    setDrawerIsOpen(false);
+  };
+
   return ( 
       <Fragment>
+        {drawerIsOpen && <Backdrop onClick={closeSideDrawerHandler} />}
       {drawerIsOpen ? ( 
         <SideDrawer>
           <nav ClasName="main-navigation_drawer-nav">
