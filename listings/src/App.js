@@ -6,11 +6,14 @@ import Users from './users/pages/Users';
 import Test from './listings/components/Test';
 import Test2 from './shared/components/Test2';
 import NewListing from './listings/pages/NewListing';
+import MainNavigation from './shared/components/Navigation/MainNavigation';
 
 const App = () => {
   return (
     <Fragment>
       <Router>
+        <MainNavigation /> 
+        <main>
         <Switch>
         <Route path="/" exact>
           <Users 
@@ -24,6 +27,7 @@ const App = () => {
         </Route>
         <Redirect to="/" />
         </Switch>
+        </main>
       </Router>
     </Fragment>
   ); 
