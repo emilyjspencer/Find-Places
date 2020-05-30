@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../shared/components/UIElements/Card';
+import Button from '../../shared/components/FormElements/Button';
 
 import './SingleListing.css';
 
@@ -14,9 +15,9 @@ const SingleListing = props => {
               <p>{props.description}</p>
           </div>
           <div className="single-listing_actions">
-            <button>View listing on map</button>
-            <button>Edit listing</button>
-            <button>Delete listing</button>
+            <Button inverse>View listing on map</Button>
+            <Button to={`/listings${props.id}`}>Edit listing</Button>
+            <Button danger>Delete listing</Button>
           </div>
       </div>
     </Card>
