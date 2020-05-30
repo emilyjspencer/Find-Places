@@ -7,6 +7,7 @@ import Test from './listings/components/Test';
 import Test2 from './shared/components/Test2';
 import NewListing from './listings/pages/NewListing';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
+import UserListings from './listings/pages/UserListings';
 
 const App = () => {
   return (
@@ -16,8 +17,10 @@ const App = () => {
         <main>
         <Switch>
         <Route path="/" exact>
-          <Users 
-          />
+          <Users />
+        </Route>
+        <Route path="/:userId/listings" exact>
+          <UserListings />
         </Route>
         <Route path="/listings/new" exact>
           <NewListing />
