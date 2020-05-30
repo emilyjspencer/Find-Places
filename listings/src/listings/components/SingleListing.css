@@ -47,6 +47,11 @@
   .single-listing_actions a {
     margin: 0.5rem;
   }
+
+  .map-container {
+    height: 20rem;
+    width:  100%  
+  }
   
   @media (min-width: 768px) {
     .single-listing_image {
