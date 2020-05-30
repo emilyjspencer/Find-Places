@@ -1,5 +1,6 @@
 import React from 'react';
 import ListingsList from '../components/ListingsList';
+import { useParams } from 'react-router-dom';
 
 const TEST_LISTINGS = [
     {
@@ -12,7 +13,7 @@ const TEST_LISTINGS = [
             lat: '51.3134488',
             lng: '-1.2646697'
         },
-        creator: 'u1'
+        creator: '1'
     },
 
     {
@@ -25,15 +26,15 @@ const TEST_LISTINGS = [
             lat: '51.3134488',
             lng: '-1.2646697'
         },
-        creator: 'u2'
+        creator: '2'
     }
-
-
-]
+];
 
 
 const UserListings = () => {
-  return <ListingsList items={TEST_LISTINGS} />
+    const userId = useParams().userId
+    const loadedListings = TEST_LISTINGS.filter(listing => listing.creator === userId)
+  return <ListingsList items={loadedListings} />
 }
 
 export default UserListings;

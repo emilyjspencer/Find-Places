@@ -2,6 +2,7 @@ import React from 'react';
 
 import Card from '../../shared/components/UIElements/Card';
 import SingleListing from './SingleListing';
+import { useParams } from 'react-router-dom';
 
 import './ListingsList.css';
 
